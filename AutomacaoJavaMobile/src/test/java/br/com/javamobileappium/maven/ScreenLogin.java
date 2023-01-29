@@ -20,21 +20,21 @@ public class ScreenLogin {
 		
 		@WithTimeout(time = 500, chronoUnit = ChronoUnit.SECONDS) 
 		@AndroidFindBy( id=  "login_username")		
-		private static RemoteWebElement  campologin;
+		private static RemoteWebElement  Cmplogin;
 		
 		@AndroidFindBy( id = "login_password")
-		private static RemoteWebElement camposenha;
+		private static RemoteWebElement Cmposenha;
 		
 		@AndroidFindBy( id = "login_button")
-		private static RemoteWebElement btnlogin;
+		private static RemoteWebElement Btnlogin;
 		
 		
 		
 		public void Testelogar() {
 			
-			campologin.sendKeys("felipereiribeiro@gmail.com");
-			camposenha.sendKeys("1234");
-			btnlogin.click();
+			Cmplogin.sendKeys("felipereiribeiro@gmail.com");
+			Cmposenha.sendKeys("1234");
+			Btnlogin.click();
 		
 		}
 		
